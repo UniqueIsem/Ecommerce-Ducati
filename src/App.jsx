@@ -1,6 +1,7 @@
 import './App.css';
 import { Header } from './components/Header';
 import { HomePage } from './components/HomePage';
+import { MotoCarousel } from './components/MotoCarousel';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       </header>
       <body className="App-body">
         <HomePage></HomePage>
+        <MotoCarousel></MotoCarousel>
       </body>
       <footer className='App-footer'>
 
