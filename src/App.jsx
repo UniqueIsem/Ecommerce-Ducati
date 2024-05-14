@@ -1,4 +1,5 @@
 import './App.css';
+import { GearCarousel } from './components/GearCarousel';
 import { Header } from './components/Header';
 import { HomePage } from './components/HomePage';
 import { MotoCarousel } from './components/MotoCarousel';
@@ -12,6 +13,7 @@ function App() {
       <body className="App-body">
         <HomePage></HomePage>
         <MotoCarousel></MotoCarousel>
+        <GearCarousel></GearCarousel>
       </body>
       <footer className='App-footer'>
 
