@@ -7,27 +7,34 @@
 .header-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 90%;
+  height: 14%;
   z-index: 1;
   position: fixed;
   font-size: 1.2rem;
   color: rgb(17, 17, 17);
   margin-block-start: 10rem;
   background-color: #e4e4e4;
+  transition: 1s ease;
 }
 
-.header-nav-bar ul {
-  margin-inline-end: 2rem;
+.header-scrolled {
+  opacity: 0.8;
+  margin-block-start: 3rem;
+  height: 10%;
+  .nav-logo {
+    width: 10%;
+  }
 }
 
 .header-nav-bar ul li {
   display: inline;
-  padding: 2rem;
+  margin-inline: 1rem;
 }
 
 .nav-logo {
-  width: 60px;
-  height: 65px;
+  width: 20%;
 }
 
 /*HOME PAGE*/
@@ -106,13 +113,13 @@
   justify-content: right;
 }
 
-.btn-show-all-moto {
-  background: transparent;
-  border: none;
+.link-show-all-moto {
   font-size: large;
   opacity: 50%;
   cursor: pointer;
   margin-inline-end: 2rem;
+  text-decoration: none;
+  color: black;
 }
 
 .carousel-container {
@@ -130,7 +137,7 @@
   text-align: center;
 }
 
-.carousel-link {
+.carousel-link, a {
   text-decoration: none;
   color: black;
 }
@@ -146,6 +153,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .nav-logo {
+    width: 10%;
+  }
+
   .hp-info-container {
     flex-direction: column;
   }

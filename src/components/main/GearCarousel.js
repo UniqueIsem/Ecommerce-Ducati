@@ -25,11 +25,11 @@ export const GearCarousel = () => {
     return (
         <div className='carousel-container'>
             <div className='carousel-header'>
-                <div className='carousel-title'>
+                <div className='carousel-title' id='gear-title'>
                     <h1>DRIVING GEAR</h1>
                 </div>
                 <div className='show-all-container'>
-                    <button className='btn-show-all-moto'>Show All...</button>
+                    <a className='link-show-all-moto'>Show All...</a>
                 </div>
             </div>
             <Carousel responsive={responsive}>

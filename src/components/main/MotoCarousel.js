@@ -25,16 +25,16 @@ export const MotoCarousel = () => {
   return (
     <div className='carousel-container'>
       <div className='carousel-header'>
-        <div className='carousel-title'>
+        <div className='carousel-title' id='moto-title'>
           <h1>MOTORCYCLES</h1>
         </div>
         <div className='show-all-container'>
-          <button className='btn-show-all-moto'>Show All...</button>
+          <a className='link-show-all-moto' id='showAlllMotos' href='./routes/AllMoto.jsx'>Show All...</a>
         </div>
       </div>
       <Carousel responsive={responsive}>
         <div className='carousel-moto-card'>
-          <a className='carousel-link' href=''>
+          <a className='carousel-link' href='../routes/ShopItem.jsx'>
             <img className='carousel-moto-img' id='panigale' src='https://images.ctfassets.net/x7j9qwvpvr5s/6Vy7PTvkJpSb4eQBJTDsvi/ad005023bb347bf0e6003da5797aa9fd/PV2-Rd-MY22-Model-Preview-1050x650-v06.png'></img>
             <h2 id='panigaleTitle'>Ducati Panigale V4</h2>
             <p id='panigaleDescription'>Rojo Ducati con llantas negras
