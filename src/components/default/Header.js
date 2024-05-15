@@ -5,9 +5,11 @@ export const Header = () => {
 
   window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
-      header.className.add('header-scrolled');
+      header.classList.add('scroll-active')
+      console.log("scrolled");
     } else {
-      header.className.remove('header-scrolled');
+      header.classList.remove('scroll-active')
+      console.log("not scrolled");
     }
   });
 
@@ -15,11 +17,11 @@ export const Header = () => {
     <div className='header-container' id='header'>
       <div className='header-nav-bar'>
         <ul>
-            <li><a href='#moto-title'>MODELS</a></li>
-            <li><a href='/components/App.jsx'><img className='nav-logo' src='https://assets.ducati.com/dist/0.20.2/assets/img/ducati_id.png' ></img></a></li>
-            <li><a href='#gear-title'>GEAR</a></li>
+          <li><a href='#moto-title'>MODELS</a></li>
+          <li><a href='/components/App.jsx'><img className='nav-logo' src='https://assets.ducati.com/dist/0.20.2/assets/img/ducati_id.png' ></img></a></li>
+          <li><a href='#gear-title'>GEAR</a></li>
         </ul>
-        </div>
+      </div>
     </div>
   )
 }

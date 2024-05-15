@@ -19,7 +19,7 @@
   transition: 1s ease;
 }
 
-.header-scrolled {
+.scroll-active {
   opacity: 0.8;
   margin-block-start: 3rem;
   height: 10%;
@@ -35,6 +35,7 @@
 
 .nav-logo {
   width: 20%;
+  transition: width 1s ease;
 }
 
 /*HOME PAGE*/
