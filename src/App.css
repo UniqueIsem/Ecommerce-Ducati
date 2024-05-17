@@ -1,0 +1,178 @@
+/*HEADER*/
+.App-header {
+  display: grid;
+  place-items: center;
+}
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 14%;
+  z-index: 1;
+  position: fixed;
+  font-size: 1.2rem;
+  color: rgb(17, 17, 17);
+  margin-block-start: 10rem;
+  background-color: #e4e4e4;
+  transition: 1s ease;
+}
+
+.scroll-active {
+  opacity: 0.8;
+  margin-block-start: 3rem;
+  height: 10%;
+  .nav-logo {
+    width: 10%;
+  }
+}
+
+.header-nav-bar ul li {
+  display: inline;
+  margin-inline: 1rem;
+}
+
+.nav-logo {
+  width: 20%;
+  transition: width 1s ease;
+}
+
+/*HOME PAGE*/
+.hp-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.8)), url("https://images.ctfassets.net/x7j9qwvpvr5s/RomXNdrXKSGpH9uIqIIpk/ec8fd714e873d23ed19165d95ef42307/Ducati-Superleggera-V4-01-Hero-1600x100.jpg?fm=webp&q=90");
+  background-size: cover;
+}
+
+.hp-blank-space {
+  width: 100%;
+  height: 150px;
+}
+
+.hp-info-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  color: #ffffff;
+}
+
+.hp-text-container {
+  margin-block-start: 3rem;
+  margin-block-end: 5rem;
+  margin-inline-start: 5rem;
+}
+
+.hp-title {
+  font-size: 2.1rem;
+}
+
+.hp-subtitle {
+  font-size: 1.3rem;
+  margin-inline-end: 20rem;
+}
+
+.hp-button-container {
+  display: grid;
+  place-items: end;
+  width: 20%;
+  margin-bottom: 5rem;
+}
+
+.hp-button {
+  width: 300px;
+  height: 50px;
+  background: linear-gradient(to bottom, transparent, rgba(32, 32, 32, 0.8)), rgb(188, 0, 0);
+  border: none;
+  color: #e4e4e4;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/*MOTO CAROUSEL*/
+.carousel-header {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.carousel-title {
+  width: 80%;
+  padding-block-start: 0.1rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.show-all-container {
+  width: 20%;
+  display: grid;
+  place-items: center;
+  justify-content: right;
+}
+
+.link-show-all-moto {
+  font-size: large;
+  opacity: 50%;
+  cursor: pointer;
+  margin-inline-end: 2rem;
+  text-decoration: none;
+  color: black;
+}
+
+.carousel-container {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+.carousel-moto-card,
+.carousel-gear-card {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  padding-block-end: 4rem;
+  text-align: center;
+}
+
+.carousel-link, a {
+  text-decoration: none;
+  color: black;
+}
+
+.carousel-moto-img {
+  width: 100%;
+  height: 60%;
+}
+
+.carousel-gear-img {
+  width: 50%;
+  height: 50%;  
+}
+
+@media screen and (max-width: 768px) {
+  .nav-logo {
+    width: 10%;
+  }
+
+  .hp-info-container {
+    flex-direction: column;
+  }
+
+  .hp-text-container .hp-subtitle {
+    width: 80%;
+    margin-inline-end: 0;
+  }
+
+  .hp-button-container {
+    width: 100%;
+    place-items: center;
+  }
+
+  .carousel-moto-img {
+    height: 50%;
+  }
+}
