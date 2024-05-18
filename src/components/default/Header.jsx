@@ -3,11 +3,9 @@ export const Header = () => {
 
   window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
-      //header.classList.add('scroll-active')
-      console.log("scrolled");
+      header.classList.add('scroll-active')
     } else {
-      //header.classList.remove('scroll-active')
-      console.log("not scrolled");
+      header.classList.remove('scroll-active')
     }
   });
 
