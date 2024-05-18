@@ -1,11 +1,12 @@
 import React from 'react'
+import { Form } from 'react-router-dom';
 
 export const ShopItem = () => {
     const item = {
-        img: 'url',
+        img: 'https://images.ctfassets.net/x7j9qwvpvr5s/6Vy7PTvkJpSb4eQBJTDsvi/ad005023bb347bf0e6003da5797aa9fd/PV2-Rd-MY22-Model-Preview-1050x650-v06.png',
         name: 'Item 1',
-        description: '',
-        price: 10,
+        description: 'DUCATI PANIGALE',
+        price: 10000,
     };
 
     return (

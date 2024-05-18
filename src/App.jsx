@@ -7,6 +7,7 @@ import { Header } from './components/default/Header';
 import { HomePage } from './components/routes/HomePage';
 import ErrorPage from './components/routes/ErrorPage';
 import { ItemPage } from './components/routes/ItemPage'
+import { ShopItem } from './components/main/ShopItem';
 
 function App() {
   const router = createBrowserRouter([
@@ -18,8 +19,8 @@ function App() {
         {
           path: "item/:itemId",
           element: <ItemPage />,
-        }
-      ]
+        },
+      ],
     },
   ]);
 
