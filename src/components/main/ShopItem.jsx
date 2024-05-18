@@ -10,42 +10,52 @@ export const ShopItem = () => {
     };
 
     return (
-        <div id="contact">
-            <div>
-                <img
-                    key={item.img}
-                    src={item.img || null}
-                />
-            </div>
+        <div className="item-container">
+            <div className='item-info-container'>
+                <div className='item-image'>
+                    <img
+                        key={item.img}
+                        src={item.img || null}
+                        width={800}
+                        height={500}
+                    />
+                </div>
 
-            <div>
-                <h1>
-                    <>
-                        {item.name}
-                    </>
-                </h1>
+                <div className='item-text-container'>
+                    <div className='item-name'>
+                        <h1>
+                            {item.name}
+                        </h1>
+                    </div>
 
-                {item.description && <p>{item.description}</p>}
+                    <div className='item-description'>
+                        {item.description && <p>{item.description}</p>}
+                    </div>
 
-                <div>
-                    <Form action="edit">
-                        <button type="submit">Edit</button>
-                    </Form>
-                    <Form
-                        method="post"
-                        action="destroy"
-                        onSubmit={(event) => {
-                            if (
-                                !confirm(
-                                    "Please confirm you want to delete this record."
-                                )
-                            ) {
-                                event.preventDefault();
-                            }
-                        }}
-                    >
-                        <button type="submit">Delete</button>
-                    </Form>
+                    <div className='item-price'>
+                        <h2>${item.price} MX</h2>
+                    </div>
+
+                    <div className='item-buttons'>
+                        <Form action="edit">
+                            <button className='btn-buy' type="submit">Buy</button>
+                        </Form>
+                        <Form
+                            method="post"
+                            action="destroy"
+                            onSubmit={(event) => {
+                                if (
+                                    !confirm(
+                                        "Please confirm you want to delete this record."
+                                    )
+                                ) {
+                                    event.preventDefault();
+                                }
+                            }}
+                        >
+                            <button className='btn-add-to-cart' type="submit">Add to cart</button>
+                        </Form>
+                    </div>
                 </div>
             </div>
         </div>

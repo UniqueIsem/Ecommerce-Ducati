@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 export const Header = () => {
   const header = document.getElementById('header');
 
@@ -14,7 +16,7 @@ export const Header = () => {
       <div className='header-nav-bar'>
         <ul>
           <li><a href='#moto-title'>MODELS</a></li>
-          <li><a href=''><img className='nav-logo' src='https://assets.ducati.com/dist/0.20.2/assets/img/ducati_id.png' ></img></a></li>
+          <li><NavLink to="/"><img className='nav-logo' src='https://assets.ducati.com/dist/0.20.2/assets/img/ducati_id.png' ></img></NavLink></li>
           <li><a href='#gear-title'>GEAR</a></li>
         </ul>
       </div>

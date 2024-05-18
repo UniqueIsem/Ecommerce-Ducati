@@ -1,7 +1,12 @@
 import React from 'react'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import { Outlet, Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+
+export async function loader() {
+  const contacts = await getContacts();
+  return { contacts };
+}
 
 export const MotoCarousel = () => {
   const responsive = {
@@ -35,13 +40,13 @@ export const MotoCarousel = () => {
       </div>
       <Carousel responsive={responsive}>
         <div className='carousel-moto-card'>
-          <Link to={'../main/ShopItem/1'} className='carousel-link'>
+          <NavLink to={'../main/ShopItem/1'} className='carousel-link'>
             <img className='carousel-moto-img' id='panigale' src='https://images.ctfassets.net/x7j9qwvpvr5s/6Vy7PTvkJpSb4eQBJTDsvi/ad005023bb347bf0e6003da5797aa9fd/PV2-Rd-MY22-Model-Preview-1050x650-v06.png'></img>
             <h2 id='panigaleTitle'>Ducati Panigale V4</h2>
             <p id='panigaleDescription'>Rojo Ducati con llantas negras
               Librea negro sobre negro</p>
             <p id='panigalePrice'>$432,600 MXN</p>
-          </Link>
+          </NavLink>
         </div>
         <div className='carousel-moto-card'>
           <a className='carousel-link' href=''>

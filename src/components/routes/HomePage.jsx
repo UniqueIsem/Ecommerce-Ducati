@@ -7,7 +7,7 @@ import { Footer } from '../default/Footer'
 
 export const HomePage = () => {
     return (
-        <div className='home-container' id='homeContainer'>
+        <>
             <header className="App-header">
                 <Header />
             </header>
@@ -19,6 +19,6 @@ export const HomePage = () => {
             <div className='App-footer'>
                 <Footer />
             </div>
-        </div>
+        </>
     )
 }

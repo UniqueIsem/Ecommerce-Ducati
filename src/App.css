@@ -189,6 +189,57 @@ footer {
   margin-left: 40px;
 }
 
+
+/*SHOP ITEM*/
+.item-container {
+  width: auto;
+  height: auto;
+  background-image: linear-gradient(to bottom, red, rgba(0, 0, 0, 0.8));
+  padding: 5rem;
+  padding-block-start: 9rem;
+  align-items: center;
+
+}
+
+.item-info-container {
+  border: solid 2px #ffffff;
+  border-radius: 10px;
+  display: flex
+}
+
+.item-text-container {
+  width: 100%;
+  height: 70vh;
+  padding: 1rem;
+  text-align: center;
+  align-content: center;;
+  color: #ffffff;
+}
+
+.item-name,
+.item-description {
+  display: grid;
+  place-items: right;
+  padding-bottom: 0.5rem;
+}
+
+.item-buttons {
+  padding-inline: 5rem;
+  margin: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btn-buy, 
+.btn-add-to-cart {
+  background-color: transparent;
+  border: solid 2px #ffffff;
+  padding: 1rem;
+  color: #ffffff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 768px) {
   .nav-logo {
     width: 10%;
