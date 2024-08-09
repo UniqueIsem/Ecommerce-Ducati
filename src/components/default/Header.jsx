@@ -1,25 +1,42 @@
-import { NavLink } from "react-router-dom";
+import { Outlet, Link, NavLink } from "react-router-dom";
 
 export const Header = () => {
   const header = document.getElementById('header');
 
-  window.addEventListener('scroll', () => {
+
+  const ancleMotoCarousel = () => {
+    window.scrollTo({top: 650, behavior: 'smooth'});
+  };
+
+  const ancleGearCarousel = () => {
+    window.scrollTo({top: 1350, behavior: 'smooth'});
+  };
+
+  /*window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
-      header.classList.add('scroll-active')
+      header.className.add('scroll-active')
     } else {
-      header.classList.remove('scroll-active')
+      header.className.remove('scroll-active')
     }
-  });
+  });*/
 
   return (
     <div className='header-container' id='header'>
-      <div className='header-nav-bar'>
+      <nav className='header-nav-bar'>
         <ul>
-          <li><a href='#moto-title'>MODELS</a></li>
-          <li><NavLink to="/"><img className='nav-logo' src='https://assets.ducati.com/dist/0.20.2/assets/img/ducati_id.png' ></img></NavLink></li>
-          <li><a href='#gear-title'>GEAR</a></li>
+          <li>
+            <button onClick={ancleMotoCarousel}>Models</button>
+
+          </li>
+          <li>
+            <NavLink to="/"><img className='nav-logo' src='https://assets.ducati.com/dist/0.20.2/assets/img/ducati_id.png' ></img></NavLink>
+          </li>
+          <li>
+          <button onClick={ancleGearCarousel}>Gear</button>
+            
+          </li>
         </ul>
-      </div>
+      </nav>
     </div>
   )
 }
